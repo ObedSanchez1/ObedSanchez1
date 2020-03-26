@@ -1,0 +1,189 @@
+
+#include <stdio.h>
+ 
+const char fin = '.';
+typedef char string[1000];
+ 
+void CambiarLetra (char & letra){
+  if (letra=='a'){
+    letra='z';
+  }
+  else if (letra=='b'){
+    letra='y';
+  }
+  else if (letra=='c'){
+    letra='x';
+  }
+  else if (letra=='d'){
+    letra='w';
+  }
+  else if (letra=='e'){
+    letra='v';
+  }
+  else if (letra=='f'){
+    letra='u';
+  }
+  else if (letra=='g'){
+    letra='t';
+  }
+  else if (letra=='h'){
+    letra='s';
+  }
+  else if (letra=='i'){
+    letra='r';
+  }
+  else if (letra=='j'){
+    letra='q';
+  }
+  else if (letra=='k'){
+    letra='p';
+  }
+  else if (letra=='l'){
+    letra='o';
+  }
+  else if (letra=='m'){
+    letra='n';
+  }
+  else if (letra=='n'){
+    letra='n';
+  }
+  else if (letra=='ñ'){
+    letra='m';
+  }
+  else if (letra=='o'){
+    letra='l';
+  }
+  else if (letra=='p'){
+    letra='k';
+  }
+  else if (letra=='q'){
+    letra='j';
+  }
+  else if (letra=='r'){
+    letra='i';
+  }
+  else if (letra=='s'){
+    letra='h';
+  }
+  else if (letra=='t'){
+    letra='g';
+  }
+  else if (letra=='u'){
+    letra='f';
+  }
+  else if (letra=='v'){
+    letra='e';
+  }
+  else if (letra=='w'){
+    letra='d';
+  }
+  else if (letra=='x'){
+    letra='c';
+  }
+  else if (letra=='y'){
+    letra='b';
+  }
+  else if (letra=='Z'){
+    letra='A';
+  }
+  else if (letra=='A'){
+    letra='Z';
+  }
+  else if (letra=='B'){
+    letra='Y';
+  }
+  else if (letra=='C'){
+    letra='X';
+  }
+  else if (letra=='D'){
+    letra='W';
+  }
+  else if (letra=='E'){
+    letra='V';
+  }
+  else if (letra=='F'){
+    letra='U';
+  }
+  else if (letra=='G'){
+    letra='T';
+  }
+  else if (letra=='H'){
+    letra='S';
+  }
+  else if (letra=='I'){
+    letra='R';
+  }
+  else if (letra=='J'){
+    letra='Q';
+  }
+  else if (letra=='K'){
+    letra='P';
+  }
+  else if (letra=='L'){
+    letra='O';
+  }
+  else if (letra=='M'){
+    letra='Ñ';
+  }
+  else if (letra=='N'){
+    letra='N';
+  }
+  else if (letra=='Ñ'){
+    letra='M';
+  }
+  else if (letra=='O'){
+    letra='L';
+  }
+  else if (letra=='P'){
+    letra='K';
+  }
+  else if (letra=='Q'){
+    letra='J';
+  }
+  else if (letra=='R'){
+    letra='I';
+  }
+  else if (letra=='S'){
+    letra='H';
+  }
+  else if (letra=='T'){
+    letra='G';
+  }
+  else if (letra=='U'){
+    letra='F';
+  }
+  else if (letra=='V'){
+    letra='E';
+  }
+  else if (letra=='W'){
+    letra='D';
+  }
+  else if (letra=='X'){
+    letra='C';
+  }
+  else if (letra=='Y'){
+    letra='B';
+  }
+  else if (letra=='Z'){
+    letra='A';
+  }
+}
+ 
+int main(){
+ 
+  int k = 0;
+ 
+  string texto;
+ 
+  printf("Introduce el texto a decifrar: ");
+  scanf("%[^\n]",&texto);
+ 
+  while (texto[k] != fin){
+    CambiarLetra(texto[k]);
+    k++;
+  }
+ 
+  printf("El codigo descifrado es: %s",texto);
+ 
+}
+ 
